@@ -1,0 +1,48 @@
+mat-toolbar {
+    justify-content: center;
+    background-color: #9eadbc;
+  }
+  
+  .container {
+    display: flex;
+    align-items: space-between;
+  }
+  
+  .icon-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-links a img{
+    color: #fff;
+    margin-left: 10px;
+    transition: all 0.3s;
+  }
+  
+  .icon-links a img:hover {
+    color: #f1c40f;
+  }
+  
+  
+  .icon-angularjs {
+    
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+  }
+  
+  img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 20px;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 12px;
+    margin-left: 50px;
+    
+  }

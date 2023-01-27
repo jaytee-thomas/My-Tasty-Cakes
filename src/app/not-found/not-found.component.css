@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #262626;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    display:flex;
+}
+
+.btn .rounded-button {
+    
+    background-color: #dc5c5c; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 12px 24px; /* Some padding */
+    font-size: 26px; /* Increase font size */
+    cursor: pointer; /* Add cursor on hover */
+    border-radius: 30px; /* Rounded corners */
+    height: 100px;
+    width: 300px;
+    margin-right: 20px; /* 20px gap between buttons */
+}
+.btn button:last-child {
+    margin-right: 40px; /* Remove margin on last button */
+  }
+
+.btn .rounded-button:hover {
+    
+    background-color: #14457e; /* Change background color on hover */
+}
+
+h3 {
+    font-size: 8.8rem;
+    font-weight: 500;
+    color: #14457e;
+    padding-bottom: 12px;
+    margin-top: 240px;
+    margin-right: 22px
+    
+}
+

@@ -1,0 +1,15 @@
+
+
+<a routerLink="../item-detail/{{item?.id}}">
+  <mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h3>{{item?.name}}</h3>
+    </mat-card-title>
+  </mat-card-header>
+  <img class='mat-card-image' src="../../assets/{{item?.category}}/{{item?.name}}.jpg" alt="{{item?.name}}" alt="Card Image">
+  <mat-card-content>
+   <p>${{item?.price}} {{item?.category}}</p> 
+  </mat-card-content>
+</mat-card>  
+</a>

@@ -1,0 +1,81 @@
+form {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 60%;
+    margin-right: 1rem;
+    border-radius: 6px;
+  }
+  
+  button[type="submit"] {
+    background-color: #bf8c7b;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  button {
+    background-color: #f4dbda; /* Green */
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    height: px;
+    margin: 8px 0;
+    opacity: 0.9;
+    border-radius: 6px;
+    margin-left: 10px;
+
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 1;
+  }
+  
+  /* Style the search button */
+  .search-btn {
+    float: right;
+  }
+  
+  /* Style the clear button */
+  .clear-btn {
+    float: left;
+  }
+  
+  /* Add a "pressed" effect for the clear button */
+  .clear-btn:active {
+    background-color: #3e8e41;
+  }
+  
+  /* Media Queries */
+@media screen and (max-width: 768px) {
+  input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    margin-left: 0;
+  }
+  .search-btn, .clear-btn{
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+
+

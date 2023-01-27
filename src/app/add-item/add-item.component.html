@@ -1,0 +1,17 @@
+<div id="item-form">
+    <h3>Enter Item Details</h3>
+    <div>
+        <input [(ngModel)]="item.name" type="text" placeholder="Name">
+    </div>
+    <div>
+        <input [(ngModel)]="item.category" type="email" placeholder="Price ($)">
+    </div>
+    <div>
+        <input [(ngModel)]="item.price" type="text" placeholder="Unit (pound / piece)">
+    </div>
+    <div>
+        <input type="button" (click)="add()" value="Add">
+    </div>
+</div>
+
+

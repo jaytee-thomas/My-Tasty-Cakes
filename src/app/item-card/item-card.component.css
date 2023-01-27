@@ -1,0 +1,54 @@
+
+mat-card {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .mat-card-image {
+    width: 100%;
+    height: 65%
+  }
+  
+  mat-card-actions {
+    justify-content: flex-end;
+  }
+  
+  mat-card:hover {
+    background-color: #9eadbc;
+    opacity: 90%;
+}
+
+mat-card:hover:nth-child(1) {
+    animation: shake1 0.5s;
+}
+mat-card:hover:nth-child(2) {
+    animation: shake1 0.5s;
+}
+mat-card:hover:nth-child(3) {
+    animation: shake1 0.5s;
+}
+mat-card:hover:nth-child(4) {
+    animation: shake1 0.5s;
+}
+mat-card:hover:nth-child(5) {
+    animation: shake1 0.5s;
+}
+mat-card:hover:nth-child(6) {
+    animation: shake1 0.5s;
+}
+
+@keyframes shake1{
+    0% {transform: translate(1px, 1px)
+    rotate(0deg);}
+    25% {transform: translate(-1px, -2px)
+    rotate(-3deg);}
+    50% {transform: translate(-1px, -2px)
+    rotate(0deg);}
+    75% {transform: translate(-1px, -2px)
+    rotate(-3deg);}
+
+}

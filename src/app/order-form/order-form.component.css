@@ -1,0 +1,46 @@
+.example-form {
+    min-width: 150px;
+    max-width:  600px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+  
+  button {
+    background-color: #f4dbda; /* Green */
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    height: px;
+    margin: 8px 0;
+    opacity: 0.9;
+    border-radius: 6px;
+    margin-left: 10px;
+
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 1;
+  }
+
+  /* Media Queries */
+@media screen and (max-width: 768px) {
+  .example-form {
+    max-width: 100%;
+  }
+  
+  button {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+}
