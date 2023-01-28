@@ -3,6 +3,7 @@ import { Item } from '../models/item';
 import { DataService } from '../data.service';
 
 
+
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -17,7 +18,7 @@ export class LandingPageComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.dataServices.getItems().subscribe(data => {
+    this.dataServices.getItems('').subscribe(data => {
       this.items = data;
     })
   }
@@ -28,7 +29,7 @@ export class LandingPageComponent implements OnInit {
 
 
   onSearchTextChanged(itemName: string) {
-    this.dataServices.getItems().subscribe({
+    this.dataServices.getItems('').subscribe({
       next: data => {
         if (itemName || itemName !== '') {
           this.items = data.filter(item => item.name?.includes(itemName));
@@ -40,7 +41,7 @@ export class LandingPageComponent implements OnInit {
   }
 
   filterItem(category: string) {
-    this.dataServices.getItems().subscribe({
+    this.dataServices.getItems('').subscribe({
       next: data => {
         if (category || category !== '') {
           this.items = data.filter(item => item.name?.includes(category));

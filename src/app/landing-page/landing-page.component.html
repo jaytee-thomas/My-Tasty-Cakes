@@ -5,6 +5,7 @@
             <app-search-bar (searchTextChanged)="onSearchTextChanged($event)"></app-search-bar>
             <h3 class="landing-page-title">My Tasty Menu</h3>
               <app-item-list [items] = "items"></app-item-list>
+              
         </div>
       </div>
       <div class="topnav">
@@ -12,7 +13,7 @@
         <a mat-button (click)="filterItem('Brownies')">Brownies</a> 
         <a mat-button (click)="filterItem('Cupcakes')">Cupcakes</a>
         <a mat-button (click)="filterItem('Cookies')">Cookies</a>
-        <a mat-button (click)="filterItem('Cakes')">Cakes</a>
+        <a mat-button (click)="filterItem('Cake')">Cakes</a>
         <a class="active" href="#home">Home</a>
     </div>
  

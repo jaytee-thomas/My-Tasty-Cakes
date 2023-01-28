@@ -24,7 +24,21 @@
     opacity: 0.9;
     border-radius: 6px;
     margin-left: 10px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
 
+   /* Add hover effect */
+   button:hover {
+    cursor: pointer;
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+
+  /* Add active effect */
+  button:active {
+    background-color: #2980b9;
+    transform: scale(0.95);
   }
   
   /* Add a hover effect for buttons */
@@ -43,4 +57,8 @@
     height: auto;
     margin-left: 0;
   }
+}
+
+mat-datepicker {
+  width: 10%;
 }

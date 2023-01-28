@@ -27,6 +27,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { OrderFormComponent } from './order-form/order-form.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { MatRippleModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatNativeDateModule} from '@angular/material/core';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+
+
 
 
 
@@ -65,7 +71,11 @@ import { MatRippleModule } from '@angular/material/core';
     HttpClientModule,
     MatToolbarModule,
     MatRippleModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatOptionModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
