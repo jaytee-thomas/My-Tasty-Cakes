@@ -50,7 +50,7 @@ export class OrderFormComponent implements OnInit {
   constructor(private dataService: DataService, private snackBar: MatSnackBar) {
     // Set the minimum to January 1st 20 years in the past and December 31st a year in the future.
     const currentYear = new Date().getFullYear();
-    this.minDate = new Date(currentYear - 0, 0, 28);
+    this.minDate = new Date();
     this.maxDate = new Date(currentYear + 1, 11, 31);
     this.selectedRating = '5';
   }
