@@ -57,7 +57,7 @@
     </tr></table>
     <mat-form-field appearance="fill">
       <mat-label>Choose a date</mat-label>
-      <input matInput [matDatepicker]="picker" placeholder="Name" ngModel name="date" required>
+      <input matInput [matDatepicker]="picker" [min]="minDate" [max]="maxDate" placeholder="Name" ngModel name="date" required>
       <mat-hint>MM/DD/YYYY</mat-hint>
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker placeholder="Name" ngModel name="name" required></mat-datepicker>
@@ -82,7 +82,7 @@
       <section class="btn-bottom">
         <div class="example-button-row">
           <button class="reset" mat-button color="primary" type="reset" (click)="onReset(form)">Reset</button>
-          <button class="submit" type="submit" color="accent" (click)="onSubmit(form)">Submit</button>
+          <button class="submit" type="submit" color="accent" (click)="onSubmit(form); openSnackBar('Form submitted successfully', 'Dismiss')">Submit</button>
           <button class="home" mat-button color="accent" [routerLink]="['/landing-page']">Home</button>
         </div>
       </section>

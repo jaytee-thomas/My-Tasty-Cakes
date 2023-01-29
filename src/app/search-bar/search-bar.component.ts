@@ -25,4 +25,6 @@ export class SearchBarComponent implements OnInit{
     this.itemName = '';
     this.searchTextChanged.emit(this.itemName);
   }
+
+  
 }

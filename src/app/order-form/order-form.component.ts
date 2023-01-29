@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import{DataService} from '../data.service';
 import { Order } from '../models/order';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 
 
@@ -31,6 +33,13 @@ export class OrderFormComponent implements OnInit {
   onReset(form: NgForm) {
     form.reset();
   }
+
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 2000,
+    });
+  }
+  
   
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   matcher = new MyErrorStateMatcher();
@@ -38,18 +47,18 @@ export class OrderFormComponent implements OnInit {
   maxDate: Date;
   selectedRating: string;
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, private snackBar: MatSnackBar) {
     // Set the minimum to January 1st 20 years in the past and December 31st a year in the future.
     const currentYear = new Date().getFullYear();
-    this.minDate = new Date(currentYear - 20, 0, 1);
+    this.minDate = new Date(currentYear - 0, 0, 28);
     this.maxDate = new Date(currentYear + 1, 11, 31);
     this.selectedRating = '5';
   }
 
   onSubmit(form: NgForm) {
     const order: Order = {
-      firstName: form.value.name,
-      lastName: form.value.name,
+      firstName: form.value.firstName,
+      lastName: form.value.lastName,
       phoneNo: form.value.phoneNo,
       email: form.value.email,
       address: form.value.address,
@@ -65,7 +74,14 @@ export class OrderFormComponent implements OnInit {
       res => console.log(res),
       err => console.log(err)
     );
+
+    this.snackBar.open('Form submitted successfully', 'Dismiss', {
+      duration: 2000,
+    });
+  }
+
   }
   
-}
+  
+
 

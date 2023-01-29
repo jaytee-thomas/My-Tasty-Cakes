@@ -31,6 +31,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatNativeDateModule} from '@angular/material/core';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 
@@ -75,7 +76,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatFormFieldModule,
     MatNativeDateModule,
     MatOptionModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
