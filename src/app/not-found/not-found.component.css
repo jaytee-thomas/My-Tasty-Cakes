@@ -1,60 +1,55 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #262626;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #262626;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 img {
-    width: 50%;
-    height: 50%;
+  width: 50%;
+  height: 50%;
 }
 
 .btn {
-    display:flex;
-    width: 50%;
+  display: flex;
+  width: 50%;
 }
 
 .btn .rounded-button {
-    
-    background-color: #dc5c5c; /* Green background */
-    color: white; /* White text */
-    border: none; /* Remove border */
-    padding: 12px 24px; /* Some padding */
-    font-size: 26px; /* Increase font size */
-    cursor: pointer; /* Add cursor on hover */
-    border-radius: 20px; /* Rounded corners */
-    height: 40%px;
-    width: 100%;
-    margin-left: 120px; /* 20px gap between buttons */
+  background-color: #dc5c5c; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 12px 24px; /* Some padding */
+  font-size: 26px; /* Increase font size */
+  cursor: pointer; /* Add cursor on hover */
+  border-radius: 20px; /* Rounded corners */
+  height: 40%px;
+  width: 100%;
+  margin-left: 120px; /* 20px gap between buttons */
 }
 .btn button:last-child {
-    margin-right: 150px; /* Remove margin on last button */
-  }
+  margin-right: 150px; /* Remove margin on last button */
+}
 
 .btn .rounded-button:hover {
-    
-    background-color: #14457e; /* Change background color on hover */
+  background-color: #14457e; /* Change background color on hover */
 }
 
 h3 {
-    font-size: 4.8rem;
-    font-weight: 500;
-    color: #14457e;
-    padding-bottom: 12px;
-    margin-top: 150px;
-    margin-left: 2px
-
-    
+  font-size: 4.8rem;
+  font-weight: 500;
+  color: #14457e;
+  padding-bottom: 12px;
+  margin-top: 150px;
+  margin-left: 2px;
 }
-

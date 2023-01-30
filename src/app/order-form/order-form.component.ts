@@ -1,34 +1,38 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
-import {ErrorStateMatcher} from '@angular/material/core';
+import {
+  FormControl,
+  FormGroupDirective,
+  NgForm,
+  Validators,
+} from '@angular/forms';
+import { ErrorStateMatcher } from '@angular/material/core';
 import { Router } from '@angular/router';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import{DataService} from '../data.service';
+import { DataService } from '../data.service';
 import { Order } from '../models/order';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
-
-
-
-export class MyErrorStateMatcher implements ErrorStateMatcher  {
- 
-  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(
+    control: FormControl | null,
+    form: FormGroupDirective | NgForm | null
+  ): boolean {
     const isSubmitted = form && form.submitted;
-    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+    return !!(
+      control &&
+      control.invalid &&
+      (control.dirty || control.touched || isSubmitted)
+    );
   }
-  
 }
 
 @Component({
   selector: 'app-order-form',
   templateUrl: './order-form.component.html',
   styleUrls: ['./order-form.component.css'],
-  
 })
 export class OrderFormComponent implements OnInit {
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   onReset(form: NgForm) {
     form.reset();
@@ -39,9 +43,11 @@ export class OrderFormComponent implements OnInit {
       duration: 2000,
     });
   }
-  
-  
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
   matcher = new MyErrorStateMatcher();
   minDate: Date;
   maxDate: Date;
@@ -68,20 +74,15 @@ export class OrderFormComponent implements OnInit {
       date: form.value.date,
       message: form.value.message,
       rating: form.value.rating,
-      experience: form.value.experience
+      experience: form.value.experience,
     };
     this.dataService.submitOrder(order).subscribe(
-      res => console.log(res),
-      err => console.log(err)
+      (res) => console.log(res),
+      (err) => console.log(err)
     );
 
     this.snackBar.open('Form submitted successfully', 'Dismiss', {
       duration: 2000,
     });
   }
-
-  }
-  
-  
-
-
+}

@@ -4,17 +4,14 @@ import { Item } from '../models/item';
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
-  styleUrls: ['./item-list.component.css']
+  styleUrls: ['./item-list.component.css'],
 })
 export class ItemListComponent implements OnInit {
-
-  @Input() 
+  @Input()
   items: Item[] = [];
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     console.log(this.items);
   }
-
 }
-

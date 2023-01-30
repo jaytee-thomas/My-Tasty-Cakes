@@ -1,72 +1,74 @@
-
 mat-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    width: 200px;
-    height: 225px;
-    padding: 4px;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  width: 200px;
+  height: 225px;
+  padding: 4px;
+}
 
-  mat-card-content {
-    width: 100%;
-    height: 100%;
-  }
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
-  mat-card-header {
-    grid-column: span 2;
-  }
+mat-card-content {
+  width: 100%;
+  height: 100%;
+}
 
-  h3 {
-    font-size: 12px;
-  }
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
-  mat-card-content {
-    grid-column: span 1;
-  }
+mat-card-header {
+  grid-column: span 2;
+}
 
-  p {
-    font-size: 13px;
-  }
-  
-  mat-card:hover {
-    background-color: #9eadbc;
-    opacity: 90%;
+h3 {
+  font-size: 12px;
+}
+
+mat-card-content {
+  grid-column: span 1;
+}
+
+p {
+  font-size: 13px;
+}
+
+mat-card:hover {
+  background-color: #9eadbc;
+  opacity: 90%;
 }
 
 mat-card:hover:nth-child(1) {
-    animation: shake1 0.5s;
+  animation: shake1 0.5s;
 }
 mat-card:hover:nth-child(2) {
-    animation: shake1 0.5s;
+  animation: shake1 0.5s;
 }
 mat-card:hover:nth-child(3) {
-    animation: shake1 0.5s;
+  animation: shake1 0.5s;
 }
 mat-card:hover:nth-child(4) {
-    animation: shake1 0.5s;
+  animation: shake1 0.5s;
 }
 mat-card:hover:nth-child(5) {
-    animation: shake1 0.5s;
+  animation: shake1 0.5s;
 }
 mat-card:hover:nth-child(6) {
-    animation: shake1 0.5s;
+  animation: shake1 0.5s;
 }
 
-@keyframes shake1{
-    0% {transform: translate(1px, 1px)
-    rotate(0deg);}
-    25% {transform: translate(-1px, -2px)
-    rotate(-3deg);}
-    50% {transform: translate(-1px, -2px)
-    rotate(0deg);}
-    75% {transform: translate(-1px, -2px)
-    rotate(-3deg);}
-
+@keyframes shake1 {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  25% {
+    transform: translate(-1px, -2px) rotate(-3deg);
+  }
+  50% {
+    transform: translate(-1px, -2px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-1px, -2px) rotate(-3deg);
+  }
 }

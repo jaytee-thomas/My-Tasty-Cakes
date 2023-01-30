@@ -1,18 +1,21 @@
 <div class="item-page">
-    <div class="container">
-        <img class="wallpaper" src="../../assets/wallpaper/ingredients.jpg">
-        <h3 class="order-title">Place Your Order</h3>
-        <app-order-form></app-order-form>   
-    </div>
-    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-        <img src="../../assets/{{item.category}}/{{item.name}}.jpg" alt="" width="280px" height="250px">
-        <mat-card-content>
-            <h4>{{item.name}}</h4>
-            Category: {{item.category}} Price: {{item.price}} <br>
-            Description: <p>bla bla blha  kankln ln </p>
-        </mat-card-content>  
-    </mat-card>
+  <div class="container">
+    <img class="wallpaper" src="../../assets/wallpaper/ingredients.jpg" />
+    <h3 class="order-title">Place Your Order</h3>
+    <app-order-form></app-order-form>
+  </div>
+  <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+    <img
+      src="../../assets/{{ item.category }}/{{ item.name }}.jpg"
+      alt=""
+      width="280px"
+      height="250px"
+    />
+    <mat-card-content>
+      <h4>{{ item.name }}</h4>
+      Category: {{ item.category }} Price: {{ item.price }} <br />
+      Description:
+      <p>bla bla blha kankln ln</p>
+    </mat-card-content>
+  </mat-card>
 </div>
-
-
-

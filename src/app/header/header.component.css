@@ -1,55 +1,53 @@
 .example-spacer {
-    flex: 1 1 auto;
-  }
-
-  .example-icon {
-    margin: 0 0px 0 0;
-    border: 0px;
-    background: transparent;
-  }
-
-  .icon {
-    width: 40px;
-    height: 40px;
-    border: 0px;  
-  }
-
- .title {
-    margin-left: 10px;
- } 
-mat-toolbar{
-    background-color: #dcb0ac;
+  flex: 1 1 auto;
 }
 
+.example-icon {
+  margin: 0 0px 0 0;
+  border: 0px;
+  background: transparent;
+}
 
- /* Add a black background color to the top navigation */
+.icon {
+  width: 40px;
+  height: 40px;
+  border: 0px;
+}
+
+.title {
+  margin-left: 10px;
+}
+mat-toolbar {
+  background-color: #dcb0ac;
+}
+
+/* Add a black background color to the top navigation */
 .topnav {
-    background-color: transpaernt;
-    overflow: hidden;
-    margin-right: 40px;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: right;
-    color: #030202;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin-right: 4px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color:#dcb0ac;
-    color: #f4dbda;
-  }
-  
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #f4dbda;
-    color: white;
-    border-radius: 10px;
-  }
+  background-color: transpaernt;
+  overflow: hidden;
+  margin-right: 40px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #030202;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 4px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #dcb0ac;
+  color: #f4dbda;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #f4dbda;
+  color: white;
+  border-radius: 10px;
+}
