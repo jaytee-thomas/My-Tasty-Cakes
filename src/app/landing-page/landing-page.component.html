@@ -1,19 +1,34 @@
 
-    <div class="landing-page">
-        <div class="landing-page-content">
-            <img class="landing-page" src="../../assets/wallpaper/homemade.jpg">
-            <app-search-bar (searchTextChanged)="onSearchTextChanged($event)"></app-search-bar>
-            <h3 class="landing-page-title">My Tasty Menu</h3>
-              <app-item-list [items] = "items"></app-item-list>
-              
-        </div>
-      </div>
-      <div class="topnav">
-        <a mat-button (click)="filterItem('Bonbons')">Bonbons</a>
-        <a mat-button (click)="filterItem('Brownies')">Brownies</a> 
-        <a mat-button (click)="filterItem('Cupcakes')">Cupcakes</a>
-        <a mat-button (click)="filterItem('Cookies')">Cookies</a>
-        <a mat-button (click)="filterItem('Cake')">Cakes</a>
+    <mat-toolbar class="topnav">
         <a class="active" href="#home">Home</a>
-    </div>
- 
+        <a mat-button (click)="filterItem('Cake')">Cakes</a>
+        <a mat-button (click)="filterItem('Cookies')">Cookies</a>
+        <a mat-button (click)="filterItem('Cupcakes')">Cupcakes</a>
+        <a mat-button (click)="filterItem('Brownies')">Brownies</a> 
+        <a mat-button (click)="filterItem('Bonbons')">Bonbons</a>
+    </mat-toolbar>
+    
+    <mat-toolbar class="app-search-bar">
+    <app-search-bar (searchTextChanged)="onSearchTextChanged($event)"></app-search-bar>
+    </mat-toolbar>
+
+    
+
+    <mat-card class="landing-page-card">
+      <mat-card-content class="card-content">
+        <img mat-card-image src="../../assets/wallpaper/homemade.jpg">
+        
+      </mat-card-content> 
+    </mat-card>
+    <h3 class="landing-page-title">My Tasty Menu</h3>
+    <app-item-list [items] = "items"></app-item-list>
+    
+        
+    
+   
+   
+   
+   
+   
+    
+      

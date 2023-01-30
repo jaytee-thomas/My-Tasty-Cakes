@@ -6,41 +6,39 @@ form {
   input[type="text"] {
     border: none;
     border-bottom: 1px solid gray;
-    padding: 0.5rem;
+    padding: 0.3rem;
     font-size: 1rem;
-    width: 60%;
+    width: 200px;
     margin-right: 1rem;
-    border-radius: 6px;
+    border-radius: 10px;
   }
   
   button[type="submit"] {
     background-color: #bf8c7b;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     font-size: 1rem;
     border: none;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 10px;
   }
   
   button {
     background-color: #f4dbda; /* Green */
     color: black;
-    padding: 12px 20px;
+    padding: 0px 0px;
     border: none;
     cursor: pointer;
-    width: 25%;
-    height: px;
-    margin: 8px 0;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
     opacity: 0.9;
-    border-radius: 6px;
-    margin-left: 10px;
-
+    border-radius: 4px;
   }
   
   /* Add a hover effect for buttons */
   button:hover {
-    opacity: 1;
+    opacity: 8;
   }
   
   /* Style the search button */
@@ -54,9 +52,6 @@ form {
   }
   
   /* Add a "pressed" effect for the clear button */
-  .clear-btn:active {
-    background-color: #3e8e41;
-  }
   
   /* Media Queries */
 @media screen and (max-width: 768px) {

@@ -1,20 +1,38 @@
 
 mat-card {
-    width: 300px;
-    height: 300px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transition: 0.3s;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 200px;
+    height: 225px;
+    padding: 4px;
   }
-  
-  .mat-card-image {
+
+  mat-card-content {
     width: 100%;
-    height: 65%
+    height: 100%;
   }
   
-  mat-card-actions {
-    justify-content: flex-end;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  mat-card-header {
+    grid-column: span 2;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  mat-card-content {
+    grid-column: span 1;
+  }
+
+  p {
+    font-size: 13px;
   }
   
   mat-card:hover {
